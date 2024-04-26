@@ -1,1 +1,69 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA1VBMVEUAAABJAAFZAAAiAAAwAAETAAA7AAA+AADhAAAIAABrAADeAABMAAFWAAAuAAG/AAGnAAAlAAD4AAAgAACqAACNAABwAADHAQGGAAH+vMv91eX8LzTMAAChAADqAADyAACUAABjAADVAACAAAB3AAD/xtUpAAD+5fdEAAFvAAAPAAAZAQFfAAD5EhM2AACzAAD7Jyv+U1r/m6j+3e//mKX/SVD/scD+1+j+zd7/o7H+iZT7HR/+X2f+b3n+V1/+fIf9Oj/+qrj+d4H/hZD+ZW79SVD+QEbvWfxOAAAY2klEQVR4nO1daUPiyhId1EEQAc0IQhAimwGVZQwaNgUV/f8/6dXWSXD0mmiA6LM+3DsbmJNaurq66vSvXz/yIz/yIz/yhSTplU0/TMgCiM7Pf4NcsOAvz8+/C04CB6j+/PmzfejI9h9CijA3/YCfE0ZH2M4yO17JnJ0dHv75wyg3/ZgfFdDeb0B3eIbgut1ufNeVeLzbZZiA8vfX1CTB20bVEbZWqxXbdyUGvwecADNzhib7+8spkvAdnoHu4ruCLZ3eciWdTjNOQIkgvxrG5Dk432GG4MUY2+Vlda+dV9Leq1YvESeiJJBfCiPqb/ss0+0KPMLWaNQLOVcK9XqjATgVSFTkV8Go8JH60luX1TZhOz0tlw+OlByUy6eniLPRBl2mWZGZs+2vgBEMFOwT8YH6GB6AOzjq9XrZY1ey2V4PcAJMAgmKJIxgqxGHCArE+AL2ierbQ3iILps9Pjmp1RKu1Gq1E8BJKAv1/B5j7O5AzIm0GlGBjA/0t9co5E7LAO/4pJZKVCqG1ikp6WiGUUmkACWALKMiXYxRVmPy9wUoML4bY3ygPoAHqgNw/b+341FTV1K8H8zuShqhBJCoSMIYa8VBjRe/IwoRLTTDBkr4jnqgvURFm9wNirplmqZeVGLDby29OJhOtEqidkKKBIwQc0CN5I2bBvOKiIVCAN2q5us5xFdLgfamoyGgaY7Gt099TUnp+m42agLM4WgKmkydHIMec/V8dQvUGFFLBYDbZ914Swz0APSXqmjzMcDTR4uSBjjAJJWgW4LpLhD9cFzSGKOYaivehXUjahARIFvoZbt+Wu5lEd/1yDLt+2lHq1RSEDshrCih0Ao4tc703jbt0TVizPbKp6BGttSoQRSAaKGgwCOIL6A/wNd8LKGjUcykBZAFln5aHjEKaaVx07RGz1oFYs4RqBHynBg6Y6QgKoAYYnKowITRH9tm82ECPobBsqeSGBZMcXihJF+dPDRNe9w3EjVQYw4DTixiWnQAXu5BiOmhAqdNczibGBwnYTHABK0BCTeLpKkMEuKtMZkNzeYC1YiWCs4YMYgegBhiUpXJwLKuSoyPkpZGXm0mSHirkeeUhzGW4COjvgHeeHBabzsQNw2NxQEIMeYAQozxXDSbU1AIxY6cZNe8IWSR7SKmraBJwljR7ppm88lInIAzKoiQwW0aHEry958zpcEjcEFtYZuoDXCqg1Nc43DzoDb1LLu7vC3G3BXWTsKYMiYj07rVwBkh3hBEWBejkN0gwJ04BhkECLp4NK0H8ijGtyW7XC7MsEjZhkFWGSN6761tjuGjqEUMN/FIQIQoc7gDC70DcGAO7yQqMj7exHNxbZvl8JDKU2oPSTkQReCnoXnlQISlf+dw865ITsgADxhg8xnjxZHkmZBLc7WJCopKCCxVqQgjp0FoqfOmOeoARAg3kMG1IhBt2An309VGjgBemc25kUILpewkxns+QJfJkGWydLsKNWSyccQIaoRM6DhllIqsxYNco4rRZuN2ijaKUQYXeggyYwEIFkoZpuA7o4oiFhRZWlRjc/6Okj1eSlMVgDjQEie49F+iK27YTtFG0QnbBXw6bWYNnxlgg3YJ8Z0MYHBqbvtpJftujQ0xxmlH0qBsAQ11puGXFNpipxtUorJRjDJgYVNL/6sAgoVicon4OJ7g8lfllAYW/0sVYgkjqxFSWjLUJ926g6+BaAPfsmE7dW0UnbCvW1MCWECApEBlgxAvMYWpS15KlUTMApQdoxpdiAtL77MrbtpOSYVioycVrQiLmRfg2bZs+dO4rheooFg+OMANBmThhQbWn2RTLxAvCSK68w25ItvpBpUoKqySjcJj3UuEYID82LwW1DnL7sn2kCuJUn+K7eKOFyyVtMgR68Z81MROIbXZmBJBhbgUXubRRo2/tjItBNjdAQulLT/WbHKYX2dp14tC+0XMyXOyqUc1HmYEIhp8Sbef6MvyFGw2pURRIYQZeO2donlrUDKiAMqOmGs2kFunqHJhdDRVScT6k9RmCCJrkYPWrVnsgEFAarNBJXpVmDIe0EaPe6cFybYOeUdcdWo2hjZfjO+LxWbxZjSellT96dTZ8R5K9lcQO30wSImXm1OiV4WV/tB+BrMqwxNR+EOAaKGccAK+0mPRNrGEqFNh0S7O+lKbyeFeaV8gcvIAdnptN/uVzSoxeU6BVFQ4hkQEQ4OkWtu8n8rXZdNQurJNqzhYPJcmk0np6faqCSCv5riHxBIbbwfpU+iKFLgG5thI0YqxqXCavNjGV14lFZb0YamC4X0vTWmIAMSiFG78BhbVDLGgiIL+iHVGa9DnHW8hLxA5iafFR76Swml8ZxOJzfkFvvGtNtqU8WgO5IWnyQl3HIC1BG7esWZTSWFBEeWEKv1YmxkueK/EEHfIFTmBQLMYkyfymrh+M+U4A08DJpWYNPVncRpwKHBCzlV5wzhWNZtjWgelkoi1mf7AssbL20GVBIIS5/pwguEUDL8V30CsESNFi6oZC3OkKZ+JZ7Bq4+yIJyNWFNekTukA+FTqT1SSu58IRMpBKZEXJV7R+oOWT7Fm3QghkiIOiDMQFW6sO/RCiXuc6PDSPbk3i3N0NlwXsOaWb+fzVEnk2gzslW4m7nZQPrxXR0/8axUxevGCsX4zpUiKcQ+Dgt3sJDCQghd2M9uySpazJ5XOPQKAZPUIazZ7WFAEuaxSHkdhdnID+ndzUPk0h9OiNZdYg0vimounyd9gT2SkEGceKCZQIEUv3BFXghR6YBYnUubNVy9pX8iVxEuuzSBESdhVDsofL3D8elRmCtF0zY6YxOUeIyk4DBjptXrX5IUSDsE/LYj44GVYqqfzzxY1RLWo/gT5ahk9dT6ETVfNWfnQEzGAYawhM6XkdP2OiGuFWFOibzchYTvKNSisexypP5StbEHVbLrU0yY1tiouJ7Rxbk486QttyCiPADOlJbGxCUcUN6SwPoXF0I15bqKjcaIDLpaXmg1Vn1SNbR9XTCp+XEn6wiHl0DX/gXlbqbmOuE6AuBp6nmOqngON1E10bEl08nzsiafXFxfUiXkoO948bgfBTvW+k75gQqTe3Z05chxxzSsiBBo0xnZBbIkjqRgp5V2AXCUlDSq37HDPEwr2vGF5g3NQSl8kpGyxFcBXNHJk/0VaZ9tpdMT1IuRAk8fHmAzRDVU8cN1TG+olN9GBSOE2yiBG2g5uscPO7SF7svuSOIY19T7++QZCDa73hAQe79m60RxT8pjYX9gxKu+KZ160kMhhgOSg2r3511n5ztx1SLvnKE3I17uDolAqMX3BgYbDwfbLMFF2NnjLGqADnV2V9t26wUrWm2od/3xgLjYUTN1QWjNmsBt33r/Hwop2KaGe7pUwoUoE+JYSpSWHc7/7wZwZKpierTWYKoT8nu/c9+y6J66SqayzXP/7dOfKl8nh7L4sqa4vq4WoV94IQloUyFdGpvIVTNkgDvLDPYEbuob3ShzEeOw6nPnkOpzr40/mlesBG0CoHm5eeeX1L3Ct4NePa9krX4JrqjKEsdfhSLcQjyGK8WvChXK9CD0LPmalJTeiE0LHPdGFcL/xepBgU+d/fasczkUIpl6Zew0hMggdrUzfCYNObksON3YdzkGYmHtXonUmNW8ilOWQF4s71z1fXayTF67X3nmWHA/CEiBMRQrhoRfh3wAI//4g/IYI89FG2Ps/Q/jGtuAfhL0vhBCs9MqD8Oz76TD7IR1+DYROHvZtdRh3rfTp/wjhN7TSz+lwO9IIu5/Q4ZdbLb6pH/6fIvyJNF8DYePbrxb/hfD76/D7I/we62Hjn8x7SYevyVfWYe+lDn+/Jl9Th6/vgLdfl8giRF4BHwhdHb4pARGuqaWGiVmCIPwvCYBwTfQngm+n6z9r8zLvvJSYg/Dqtaq+FyFRSqweY1Lha7XeqbU5frj13/KWDl8idGlsVkm5xMQlO0I8s/VOnYZ12H5PfCHccmhsVkp/kkTmGRmow+nPho/MO/e+OFb69nrIIzYyCre9Mt4M5r3gIZFqvkFDMO/lNAd+5F2EPGJTZWoQ7DxazXywMLMsDcFks7X/RHjsT/4z0tSyNM/vjtgwb8aKANIQDDVO0hAMMj/812qR8Ct8YC9n4i8QJnDGhkdseOwWR6pWANEBeNlmfDgEYxhap3Njec/xvRXhSd+vTO5cK32BcDLBGZsUt1HzbAZSg4QO8RzH1GSCjhuYcQjmdnDTHNpW/7X1cGwOlei6Tv/R1a/lN/xrln9OuaVlxR4Oi4PbuWYkUtRKjbwZ2OcYNkQeScc+tEaufMRDMLMb2zTtYbP46GlzxZN56Uy8bzabRX8C//LebXj2th09wl/hj7l56OMYETXjEsSQB9ldgNy6nDBKOBBSHE+f+52OkeBZEuyb4VYYeP21ChhwANEqKdW6d+hMAZwkjE5nMp+OizSSYiRqPGK8lW6FPKvvztzniPdCmw1NfXCtWHVOZJYETEd1aSPBUDDBh6dO8Z1D7kLBnr4TZOtBnqmngW4OZ/gacEw89Fn9pMzc44RBD0cIbkxrDFaTIEYyDHP8Q7uHF9QEhI2xR9mgckRjYdhedKHmSjBgZ4+Jbcrojy2zWDL4dVbDnYFemrk/SWh3unkzp+E6ZGY5oKWK3ir8SNzU4vxZ4ZQGYv1LGamweCzsQgbE92jRPSAaG/T8+Y2pT3F2QzXlhmanZKPuzP0tjfKkmKCLWHXqzAuEZoMNh7ucExSCSb0hQ3qQsFxQYyYuvEjXc0qsb0jL9GghNUjos/rSJikz98atZSMBybEagsHpc0418JWeU+9vDNPWoHLJizl2ojJbCiaHSNcjIzYQ4LSFbd0anln9cJS4NM9sTG17QSN1ZcyimHgG2fLiTGGRpPbm3ZiHXcCv7FNCRr3ERLYRb/GXyIgNLlIJ/PFTI+QZaHcYtszjH/ASTxTzWJpIdVqS8uOuBiEy8WVQYWpI3jecyyamRXQ9acWQdoImNJzLsGpYk5dL88zajTlmR6D0KdYiSuC4d9vGW6wdRfLhX7qejZHaiDJdD4+81xX1Bs3qh6hEzzAsdiXj12eZkGtfiGcywpIrH8Cn20b6mUwQET5hZ3PLLL3M1hMXpkI1q39rOIPsITQOLw3DTnSaZ+YFKSZDMH+Ys9pjLcwBHVguLl5+CX0Lj9gwNcgBzUDrHc/47KfN1NONjdn0gN18z6FwvBB69RfvhSnYA8k/34KjJ8TjzhtvRTCiDWj+hMZnwzBTaeSljvoJT+9wqI7vMCnum9zxrxby35a3v4Roe3fiDgFHyR66446fNlNV3aYN0S1s4mSemYi41sUYx7SaikQlpY3MhWy1QqiE8/hPWuYMqfRSlpHddZKMIkTOVcueaRyezvhkcipuyHOGumc6ac0UVUK4pSaqhn0y0zAc0dttfmfJrNwWtYyudxzwXIyJBo5GlmeI5bMI/7hDSI80XxCS+QeVpHc64wGjaS+UQZOlScqRZ65lA8PjHmv6a17RkIK868987dttJZsiAHDGMEI6VgSEXDOBUNop6hN3sOJDCD9zywwmV85Qp06jbuEglIFCRNjEhVZSieDJEl81I9fMfOD2FR7MxRLccaIzbHZSxwdvT40F+1pEiNwQLsJYYITJpHMbC10yw5lssK94A+EnM9OQEMp9Hs5VM2o3Eug7IowQ7/PYVrex8C0zXeITDIQxwgiT6j6PXeemGbl9JdBJYHQRyqmjcCciRzLfviL3Wfg+CYwsQuc+COc2FiS9rl4qzkTf+XtUEdKmIM7lRbmNhW9fweJhLMhJ4IoRLq+H/hHyrqfl3OdxILfMnObcSwJ8Guo/CLMhI/yQDlVpF6n3iFsQDyHokpkj5EzE04e434rgynX4EYRIWsdE2I0c3+eBB0kJun2lR7Q8XA3xBTGSCD2HcmW5z6NTep5PkDOR6bADHJNFEaE68KBjMr7Pg7gT7eb4GY92nEM5X8lzFBGqAw8+lDPwvgu7eTO6B5jWaO4ck8X8FQwiiNBz4EGHcrbZnM35lplZ0dQXfDrgm70zgqvF8oHHzLIfO+B/qRr6Y+fRth6Yw4wPtt9XYgRXCznwULxm+h1zJ2aJM1G7s60FctYq9s7gCDdupfJRaT1pIhE2Nf2Uy8wnOLWW2Dt9fV/EEApnXcElcKVj4wId6J7g8QMxghba/uo+0UO4xFnHpFhl4k7cIz5B5Ksb9hMnR35rdxFEKJXW016tsjCvmP0Tb3RMyzFZQL65yMXSpUrrFTO5YNyMEZ+gcPVdBeCbiyLCHafSiqRYcuAR78alLywxJ/orobb8igidnWUCPjlx6pBn0pZHVHadBNiuv+dc+Xr4IYQulAlFTTp2JDpC+mMEzme5H0EYDR1u7eX4k6paDjuJeEs1j3o1ERErnXwo0uCJx7Ms7vut3ZaKNNeBTh8ih/AXI1T9wjOMmtzCwfetZJEN7NHpfH6fJjh6CDktZSrlJ4tuOuBdvWqM6TTt6wCndRFEeCF0udggcm8+qCuEZMfPtymk5CxrowgzH0SYlM0TLvmVJ1u/xnY4NNQG9Rkb1/BHyI3pl5B8PatFIIR8LM3U3OBzw2fuB0fuYLxfbwi+mZKuGD+HgNGzUmWmciPHwBwuuJ+K+poWQ2kB5L4HH4fmEUSYvBBqbr6v7NGy7zDRLmAqPrWsR7wHUG5T8NOxHUGEFE13afE7wEsgbiXR5qYHLNPQ/XHcfRSBStQHECa91+ohU+fIgxBSgKxTTfTTFRBFhFIR5rsfIYVZQghLId/jGJmK8EcQqmOLy8YbCBtb/u/ijN56iHIu15a9iZDrbL46V6K3HjJEKke9rcNL/613kbRSVXB7D6G/r4ra/vAH4Q/Cr40QdlO46XeafL8fQrzzYB60kTNytbb3EKIOaf77DQre9xFGXIemY6XfEmHKizAyfvixnqi3dDgKBaHPavlmEIYSS6OLMBWSH0YaIawWUUP4+UjzbNFdFTku839kPcxEVodyEKPjHYI9LJZ2mp7Bhqjo8IMIf297r9hbGKmTY+rDuOHhs6BfFUWEnvHFO2v4bFQSCWM+NKd0JhNkIiSiCJ22IRqqG5v243xSmulYDQ46BBpZhKqrhgrfgM3SLcCpqWFb//ODUUWoRsEbXBWej2+KN+NnI6HuVvX/gCtD6JnsogCIc/DBevXRTGkMm6mXDI3JgqQa7HtSWRDmqQNALzq7p0/PPf1xqone6Ty/yzSvF3HVRot90CnqgXZodHwPwXkXHrmmLRTST0/fj+f6sQATlklFxYIHo9jLnuU+9voeD4T7ngf3TlheL99t+XF4v5anZMdul1aANyeF7zT16yMvT5lnEbbSsSAcOknVF4BHV7ceZrDPXuW1fK+W6tIKNEKNPCVC1ZevI6VOvZ4X8rwAA+ESlNW87nv3gfmXc+H6zbnT6qdBp9UJIrI+gB6RUqeK/Xs0aRHoO/jGbrn/sy9dZJ8fKl++2fhjjANJNfsUU7Q8QmLpn5ThXKiq6MZLxTjgtzP1nadzQg1dcCdNlETSFOQBibyju8uUOnizc7cbgIg0KZSGeJ58xKwRlfDG5h3mD7o11uYLftWsi7r+9j1Sj6Siru0qrh1FJuvn4y7zx94L5o9QCGpkSLyt2Fs0h70l7rC3+BIkYSFKnUzm7CzoB5m9pbrE3hIs6XtblhrSPQw8aS8Dj28RHu9AH1EMPGlh4Hn2MvB8MqNhJXqHCphFiRp/cHyQrhIPRJYUXHbAtndbtJ4qFqUHZlEKx0jfZsJS18EHZrwKKhCe9h0mrJT2qJiw9sJiwnKHew6YzWzBbGbEB8tsZqsVD5vZccpYwDa64lHh5410mZGuJpRwuDeg0QJmpFupeBjpUsadbi3CZqTjxFKRNKW0B0ufYjuTsAq2A7MHBpV2o0FDKLC/NKa6NeP2uPZWaCr8hxnywbJmWoV5fU9pCGa14mGGnNnwo8Nnhvz1gt3TWNjmqMRjWr0jHGRarTC7Z61izO95pi98dk9F0iTtWwnjuWkOZx0iaD4OTMQaXI6Jdnoy1s3is5FwmsXiYVJVnXs36mguY9scPpY0g0h2Vy3Isjsf6KY+887Whsqy++slUzJYzJVNTMl9bfVSYqbkQd/DlBwLmSnZHax32K5lbFn3yWf9GYEfYxVnfU2xXe9t7QcqD/iEKOQIW8xYfiyM5VdNffVSHDw8c4FuhYzlXv6HNpeUkD4A/L+0eukYRDu9zDq/AkI8z80ByPR8QCG85vtugM9IjRamVd8c8OL2B6Lx6AHKdUi2h7TTK7/9QXHpMNUMUbFgsrEOodSpjjd4pFd6gwdGVCEwprLZXp4IZ9YgRKpdXcMtLL8UgbGiRCLSoNVLm7cw67hJ59cvrgplmIh6n4mfVi+0DW0pfKuyUBfjhSqbMco1iNQf13OjlYPxjGmo1yNEqr0ufIwRS3xUBFuPMNf32vARRiSidngQVy2ILjDPYlgohc0SHmDpf6H+Frm+P8YIGgbINclG0P3Ij/zIj/yII/8DEijZr+nZtGMAAAAASUVORK5CYII=" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
+        </div>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>               
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropia"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body> 
+</html>
